@@ -1,0 +1,32 @@
+.login {
+    padding: 1%;
+    width: auto;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+  }
+ .row {
+    display:block !important;
+    height: 100%;
+  }
+
+  .loginrow {
+   position: relative;
+   height: 400px;
+  }
+  .logindiv{
+    top:50% !important;
+    transform: translateY(-50%);
+   }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .login h1{
+    text-align: center !important;
+  }
+  .col-centered{
+    float: none;
+    margin: 0 auto;
+    }
