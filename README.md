@@ -26,6 +26,14 @@ sudo docker-compose up
 Con esto se crean los contenedores y se corren en un ambiente aislado. La primera vez que se ejecuta el comando puede tardarse 1-2 horas descargando todas las dependencias necesarias.
 (Probado en varias zonas de caracas, parece depender mucho del internet)
 
+Si no quiere esperar tanto y solo quiere probar los servicios, puede dirigirse a al directorio del proyecto que tiene el Dockerfile de dockerserver y ejecutar los siguientes comandos:
+
+```
+sudo docker build -t  jkdky05/dockerbackend:latest .
+sudo docker run -p 8080:8080 jkdky05/dockerbackend
+```
+Si quiere ver toda la aplicación, use el comando de docker-compose señalado arriba y espere hasta que hayan terminando de descargase todas las dependencias
+
 El frontend estará en el puerto 8500 y el backend en el puerto 8080 
 
 Al finalizar debería ver la página para loguearse:
